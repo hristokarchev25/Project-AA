@@ -20,3 +20,9 @@
 .pCenter {
     text-align: center;
 }
+.pLeft {
+    text-align: left;
+}
+.pRight {
+    text-align: right;
+}
