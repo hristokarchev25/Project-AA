@@ -1,0 +1,22 @@
+.about {
+    display: block;
+    margin: auto;
+    background-color: #f3f3f2;
+    padding: 3em;
+}
+
+.main {
+    margin: 0 4em;
+    border-radius: 15px;
+    padding: 2em;
+}
+
+
+.aboutH1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pCenter {
+    text-align: center;
+}
