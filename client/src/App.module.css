@@ -8,3 +8,17 @@
     /* border: 1px solid purple; */
     margin-bottom: 0.1%;
 }
+
+
+/* foot bonus */
+ .pagecontainer{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+ .contentwrap{
+    flex: 1;
+
+} 

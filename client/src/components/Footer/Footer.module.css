@@ -1,0 +1,30 @@
+.mainFooter {
+    color: black;
+    background-color: lightyellow;
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 2px solid lightgreen;
+    border-top: 2px solid lightgreen;
+}
+
+
+  /* .row {
+    float: left;
+    width: 18.75%;
+    padding: 0 15px;
+    margin: 0 0 25px;
+}  */ 
+
+.col {
+    width:370px;
+  height:150px;
+  float:left;
+}
+.colSm {
+    text-align: center;
+}
+/* .row {
+    float:bottom;
+} */
