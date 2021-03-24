@@ -4,44 +4,24 @@ import style from './Footer.module.css';
 const Footer = () => {
     return (
         <div className={style.mainFooter}>
-            <div className="container">
-                <div className="row">
-                    <div className={style.col}>
-                        <h4>Header 1 INC.</h4>
-                        <ul className="list-unstyled">
-                            <li>088454546</li>
-                            <li>Kz BG</li>
-                            <li>Iztok 24 a</li>
-                        </ul>
-                    </div>
-                    
-                    <div className={style.col}>
-                        <h4>Header 2.</h4>
-                        <ul className="list-unstyled">
-                            <li>MEsfsas</li>
-                            <li>sdsaff</li>
-                            <li>Iztok</li>
-                        </ul>
-                    </div>
-                    
-                    <div className={style.col}>
-                        <h4>Header 3.</h4>
-                        <ul className="list-unstyled">
-                            <li>088454546</li>
-                            <li> BG</li>
-                            <li> 24 a</li>
-                        </ul>
-                    </div>
 
-                </div>
-                <hr/>
+            <div className="container">
                 <div className={style.row}>
+                    <img className={style.logo} src="/appLogo.png" alt="footer logo" />
+                </div>
+                <div className={style.row}>
+                    <a href="https://www.facebook.com/login/"><img className={style.logo} src="/fb.png" alt="fb logo" /></a> 
+                    <a href="https://www.instagram.com/accounts/login/"><img className={style.logo} src="/ig.png" alt="ig logo" /></a>
+                    <a href="https://twitter.com/login"><img className={style.logo} src="/tw.png" alt="tw logo" /></a>
+                </div>
+                <hr />
+                <div>
                     <p className={style.colSm}>
-                        &copy;{new Date().getFullYear()} KARCHEV INC. | All right reserved | Terms of service
+                        &copy;{new Date().getFullYear()} KARCHEV INC. | All rights reserved | Terms of service
                     </p>
                 </div>
             </div>
-          
+
         </div>
     );
 };
