@@ -10,8 +10,7 @@ function App() {
       <div className={style.container}>
 
         <About />
-        <About />
-        <About />
+       
         
       </div>
       <Footer />
