@@ -5,10 +5,10 @@ import { Route, Switch } from 'react-router-dom';
 import style from './App.module.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import About from './components/About/About'
+import About from './components/About/About';
+import MusicPage from './components/MusicPage/MusicPage';
 
 
-import Demo from './components/Demo/Demo';
 function App() {
   return (
     <div className={style.app}>
@@ -17,7 +17,7 @@ function App() {
 
         <Switch>
            <Route path="/" exact component={About}/>
-           <Route path="/pathTest"  component={Demo}/>
+           <Route path="/music" exact component={MusicPage}/>
         </Switch>
 
 
