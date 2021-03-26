@@ -4,7 +4,7 @@ import style from './About.module.css';
 const About = () => {
     return (
         <>
-            <main className={style.main}>
+            {/* <main className={style.main}>
                 <h1 className={style.aboutH1}>Get to know us</h1>
                 <div className={style.about}>
                     <p className={style.pCenter}><img src="/App.png" alt="app png" /></p>
@@ -13,7 +13,7 @@ const About = () => {
                     It is created by <strong>Hristo Karchev</strong> , a student from <strong>SoftUni</strong>. Below you can read more about the features of the app. We are happy to have you, enjoy!
                 </p>
                 </div>
-            </main>
+            </main> */}
 
             <main className={style.main}>
                 <h1 className={style.aboutH1}>About Alpha Music </h1>

@@ -2,7 +2,7 @@
     display: block;
     margin: auto;
     background-color: #f3f3f2;
-    padding: 3em;
+    padding: 5em;
 }
 
 .main {
@@ -17,9 +17,6 @@
     text-transform: uppercase;
 }
 
-.pLeft {
-    text-align: left;
-}
-.pRight {
-    text-align: right;
+.pCenter {
+    text-align: center;
 }
