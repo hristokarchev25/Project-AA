@@ -7,7 +7,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import MusicPage from './components/MusicPage/MusicPage';
-
+import LibraryPage from './components/LibraryPage/LibraryPage';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Switch>
            <Route path="/" exact component={About}/>
            <Route path="/music" exact component={MusicPage}/>
-           
+           <Route path="/library" exact component={LibraryPage}/>
         </Switch>
 
 
