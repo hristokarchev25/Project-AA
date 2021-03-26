@@ -36,12 +36,13 @@
     border-bottom: 1px solid #2b415433;
 }
 
-.img {
+img.box {
     
         display: block;
         margin: 0 auto;
         text-align: center;
-    
+        height: 200px;
+        width: auto
 }
 
 
