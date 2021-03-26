@@ -1,6 +1,6 @@
 import style from './MusicPage.module.css';
 import MusicItem from './MusicItem/MusicItem';
-
+import MusicMain from './MusicMain/MusicMain';
 const MusicPage = () => {
     return (
         <>
@@ -8,6 +8,7 @@ const MusicPage = () => {
 
             <aside className={style.menu}>
                 <MusicItem />
+                <MusicMain />
             </aside>
         </>
     );
