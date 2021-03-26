@@ -4,12 +4,12 @@ import MusicMain from './MusicMain/MusicMain';
 const MusicPage = () => {
     return (
         <>
-            <h1 className={style.headerOne}>Welcome to  <p><img className={style.logo} src="/Music.png" alt="Music logo" /></p></h1>
+            <h1 className={style.headerOne}>Welcome to</h1>
 
             <aside className={style.menu}>
-                <MusicItem /> 
+                <MusicItem />
             </aside>
-             <MusicMain />
+            <MusicMain />
         </>
     );
 };

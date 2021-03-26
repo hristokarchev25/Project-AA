@@ -18,6 +18,7 @@ function App() {
         <Switch>
            <Route path="/" exact component={About}/>
            <Route path="/music" exact component={MusicPage}/>
+           
         </Switch>
 
 
