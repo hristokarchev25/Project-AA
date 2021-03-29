@@ -1,21 +1,21 @@
-import style from './CreateSongForm.module.css';
+import style from './CreateAlbumForm.module.css';
 
 
-const CreateSongForm = () => {
+const CreateAlbumForm = () => {
     return (
         <main className={style.main}>
-            <h1>Create a song</h1>
+            <h1>Create an album</h1>
             <div className={style.form}>
                 <form>
 
-                    <label htmlFor="nameOfSong">Name of the song</label>
-                    <input type="text" id="nameOfSong" name="nameOfSong" />
+                    <label htmlFor="nameOfAlbum">Name of the Album</label>
+                    <input type="text" id="nameOfAlbum" name="nameOfAlbum" />
 
                     <label htmlFor="artist">Artist</label>
                     <input type="text" id="artist" name="artist" />
 
-                    <label htmlFor="lyrics">Lyrics</label>
-                    <textarea id="name" name="lyrics"></textarea>
+                    <label htmlFor="songs">Name of songs</label>
+                    <textarea id="songs" name="songs"></textarea>
 
                     <label htmlFor="CoverUrl">CoverUrl</label>
                     <input type="text" id="coverUrl" name="coverUrl" />
@@ -29,4 +29,4 @@ const CreateSongForm = () => {
 };
 
 
-export default CreateSongForm;
+export default CreateAlbumForm;
