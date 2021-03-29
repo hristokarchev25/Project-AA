@@ -11,6 +11,7 @@ import MusicPage from './components/MusicPage/MusicPage';
 import CreateSongForm from './components/CreateSongForm/CreateSongForm';
 import CreateAlbumForm from './components/CreateAlbumForm/CreateAlbumForm';
 import LibraryPage from './components/LibraryPage/LibraryPage';
+import CreateBookReview from './components/CreateBookReview/CreateBookReview';
 
 function App() {
   return (
@@ -19,15 +20,16 @@ function App() {
       <div className={style.container}>
 
         <Switch>
-           <Route path="/" exact component={Home}/>
-           <Route path="/about" exact component={About}/>
-           <Route path="/music" exact component={MusicPage}/>
-           <Route path="/music/createSong" exact component={CreateSongForm}/>
-           <Route path="/music/createAlbum" exact component={CreateAlbumForm}/>
-           <Route path="/library" exact component={LibraryPage}/>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" exact component={About} />
+          <Route path="/music" exact component={MusicPage} />
+          <Route path="/music/createSong" exact component={CreateSongForm} />
+          <Route path="/music/createAlbum" exact component={CreateAlbumForm} />
+          <Route path="/library" exact component={LibraryPage} />
+          <Route path="/library/createBookReview" exact component={CreateBookReview} />
         </Switch>
 
-        
+
       </div>
       <Footer />
     </div>
