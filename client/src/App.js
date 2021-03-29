@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import MusicPage from './components/MusicPage/MusicPage';
+import CreateSongForm from './components/CreateSongForm/CreateSongForm';
 import LibraryPage from './components/LibraryPage/LibraryPage';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
            <Route path="/" exact component={Home}/>
            <Route path="/about" exact component={About}/>
            <Route path="/music" exact component={MusicPage}/>
+           <Route path="/music/createSong" exact component={CreateSongForm}/>
            <Route path="/library" exact component={LibraryPage}/>
         </Switch>
 
