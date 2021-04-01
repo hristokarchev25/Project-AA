@@ -12,6 +12,7 @@ const Header = () => {
                 <li className={style.listItem}><Link className={style.navListItem} to="/library">Alpha Library</Link></li>
                 <li className={style.listItem}><Link className={style.navListItem} to="/registration">Join us</Link></li>
                 <li className={style.listItem}><Link className={style.navListItem} to="/login">Login</Link></li>
+                <li className={style.listItem}><Link className={style.navListItem} to="/logout">Logout</Link></li>
             </ul>
         </nav>
     );
