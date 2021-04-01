@@ -12,7 +12,7 @@ import CreateSongForm from './components/CreateSongForm/CreateSongForm';
 import CreateAlbumForm from './components/CreateAlbumForm/CreateAlbumForm';
 import LibraryPage from './components/LibraryPage/LibraryPage';
 import CreateBookReview from './components/CreateBookReview/CreateBookReview';
-
+import Registration from './components/Registration/Registration';
 function App() {
   return (
     <div className={style.app}>
@@ -27,6 +27,7 @@ function App() {
           <Route path="/music/createAlbum" exact component={CreateAlbumForm} />
           <Route path="/library" exact component={LibraryPage} />
           <Route path="/library/createBookReview" exact component={CreateBookReview} />
+          <Route path="/registration" exact component={Registration} />
         </Switch>
 
 

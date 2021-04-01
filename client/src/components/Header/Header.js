@@ -10,7 +10,7 @@ const Header = () => {
                 <li className={style.listItem}><Link className={style.navListItem} to="/music">Alpha Music</Link></li>
                 <li className={style.listItem}><Link className={style.navListItem} to="/sports">Alpha Sports</Link></li>
                 <li className={style.listItem}><Link className={style.navListItem} to="/library">Alpha Library</Link></li>
-                <li className={style.listItem}><Link className={style.navListItem} to="/register">Join us</Link></li>
+                <li className={style.listItem}><Link className={style.navListItem} to="/registration">Join us</Link></li>
                 <li className={style.listItem}><Link className={style.navListItem} to="/login">Login</Link></li>
             </ul>
         </nav>
