@@ -1,12 +1,12 @@
 .mainFooter {
     color: black;
-    background-color: lightyellow;
+    background-color: #dcfadc;
     padding-top: 3em;
     position: relative;
     bottom: 0;
     width: 100%;
-    border-bottom: 2px solid lightgreen;
-    border-top: 2px solid lightgreen;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
 }
 
 .logo {
