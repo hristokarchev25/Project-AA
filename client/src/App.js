@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 
 
@@ -15,7 +15,7 @@ import CreateBookReview from './components/CreateBookReview/CreateBookReview';
 import Registration from './components/Registration/Registration';
 import Login from './components/Login/Login';
 
-import './utils/firebase';
+import { auth } from './utils/firebase';
 
 function App() {
   return (
@@ -33,6 +33,10 @@ function App() {
           <Route path="/library/createBookReview" exact component={CreateBookReview} />
           <Route path="/registration" exact component={Registration} />
           <Route path="/login" exact component={Login} />
+          <Route path="/logout" render={props => {
+            auth.signOut();
+            return <Redirect to="/" />
+          }} />
         </Switch>
 
 
