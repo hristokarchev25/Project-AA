@@ -40,3 +40,18 @@
     border-top: 2px solid lightgreen;
     font-weight: bold;
 }
+
+.nameItem {
+    display: inline-block;
+    height: auto;
+    margin-right: 2%;
+    cursor: unset;
+    padding: 0.5%;
+    margin: 0.1%;
+    vertical-align: top;
+    color:black;
+}
+.nameItem:not(:first-child) {
+    padding: 2%;
+    margin-top: 1.5%; 
+}

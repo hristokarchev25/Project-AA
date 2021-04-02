@@ -14,14 +14,14 @@ if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
 }
 
-firebase.auth().onAuthStateChanged((user) => {
+/* firebase.auth().onAuthStateChanged((user) => {
     if (user) {
         console.log('Logged In:');
         console.log(user);
     } else {
         console.log('Logged Out:');
     }
-});
+}); */
 
 export default firebase;
 

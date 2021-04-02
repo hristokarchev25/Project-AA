@@ -16,13 +16,22 @@ import Registration from './components/Registration/Registration';
 import Login from './components/Login/Login';
 
 import { auth } from './utils/firebase';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [user, setUser] = useState(null);
+
+
+  useEffect(() => {
+    auth.onAuthStateChanged(setUser);
+  }, [])
+
   return (
     <div className={style.app}>
-      <Header />
-      <div className={style.container}>
+      <Header email={user?.email} isAuth={Boolean(user)} />
 
+      <div className={style.container}>
+        {/* <h1>{user?.email}</h1> */}
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
