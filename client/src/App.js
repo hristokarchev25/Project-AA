@@ -15,6 +15,8 @@ import CreateBookReview from './components/CreateBookReview/CreateBookReview';
 import Registration from './components/Registration/Registration';
 import Login from './components/Login/Login';
 
+import './utils/firebase';
+
 function App() {
   return (
     <div className={style.app}>
