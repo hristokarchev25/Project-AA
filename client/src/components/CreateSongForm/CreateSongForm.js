@@ -2,11 +2,22 @@ import style from './CreateSongForm.module.css';
 
 
 const CreateSongForm = () => {
+    const createSongSubmitHandler = (e) => {
+        e.preventDefault();
+        const song = e.target.nameOfSong.value;
+        const artist = e.target.artist.value;
+        const lyrics = e.target.lyrics.value;
+        const cover = e.target.coverUrl.value;
+
+        console.log(song, artist, lyrics, cover);
+    }
+
+
     return (
         <main className={style.main}>
             <h1>Create a song</h1>
             <div className={style.form}>
-                <form>
+                <form onSubmit={createSongSubmitHandler}>
 
                     <label htmlFor="nameOfSong">Name of the song</label>
                     <input type="text" id="nameOfSong" name="nameOfSong" />
