@@ -1,7 +1,9 @@
 import style from './CreateAlbumForm.module.css';
+import { db } from '../../utils/firebase';
 
-
-const CreateAlbumForm = () => {
+const CreateAlbumForm = ({
+    history
+}) => {
     const createAlbumSubmitHandler = (e) => {
         e.preventDefault();
 
@@ -10,7 +12,20 @@ const CreateAlbumForm = () => {
         const songs = e.target.songs.value;
         const cover = e.target.coverUrl.value;
 
-        console.log(album, artist, songs, cover);
+        //console.log(album, artist, songs, cover);
+
+        db.collection('albums').add({
+            album,
+            artist,
+            songs,
+            cover
+        })
+            .then((album) => {
+                console.log(album);
+                history.push('/music');
+            })
+            .catch(err => console.log(err));
+
     }
 
     return (
