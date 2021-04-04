@@ -16,7 +16,7 @@ const Login = ({
         auth.signInWithEmailAndPassword(email, password)
             .then((userCredential) => {
                 //console.log(userCredential);
-                history.push('/about')
+                history.push('/about');
             })
             .catch(err => console.log(err));
     };

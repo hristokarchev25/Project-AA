@@ -1,7 +1,9 @@
 import style from './CreateSongForm.module.css';
+import { db } from '../../utils/firebase';
 
-
-const CreateSongForm = () => {
+const CreateSongForm = ({
+    history
+}) => {
     const createSongSubmitHandler = (e) => {
         e.preventDefault();
         const song = e.target.nameOfSong.value;
@@ -9,7 +11,19 @@ const CreateSongForm = () => {
         const lyrics = e.target.lyrics.value;
         const cover = e.target.coverUrl.value;
 
-        console.log(song, artist, lyrics, cover);
+        /* console.log(song, artist, lyrics, cover); */
+
+        db.collection('songs').add({
+            song,
+            artist,
+            lyrics,
+            cover
+        })
+            .then((song) => {
+                console.log(song);
+                history.push('/music');
+            })
+            .catch(err => console.log(err));
     }
 
 
