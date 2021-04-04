@@ -11,7 +11,7 @@ const MusicMain = () => {
         const response = db.collection('songs');
         const data = await response.get();
         data.docs.forEach(item => {
-            setSongs([ ...songs, item.data()])
+            setSongs([...songs, item.data()])
         })
     }
 
@@ -24,7 +24,7 @@ const MusicMain = () => {
             <h1><img className={style.logo} src="/Music.png" alt="Music logo" /></h1>
 
             {
-                songs.map((song) => {
+                songs && songs.map((song, index) => {
                     return (
                         /*  <div className={style.box}>
                              <img className={style.box} src={`${song.cover}`} />
@@ -33,7 +33,7 @@ const MusicMain = () => {
                              <a className={style.btn} href="#">Details</a>
                              <a className={style.btn} href="#">Details</a>
                          </div> */
-                        <SongCard {...song} />
+                        <SongCard key={index}{...song} />
                     )
                 })
             }
