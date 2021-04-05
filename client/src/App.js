@@ -39,7 +39,7 @@ function App() {
           <Route path="/music" exact component={MusicPage} />
           <Route path="/music/createSong" exact component={CreateSongForm} />
           <Route path="/music/createAlbum" exact component={CreateAlbumForm} />
-          <Route path="/music/:songId" exact component={SongDetails} />
+          <Route path="/music/details/:songId" exact component={SongDetails} />
           <Route path="/library" exact component={LibraryPage} />
           <Route path="/library/createBookReview" exact component={CreateBookReview} />
           <Route path="/registration" exact component={Registration} />

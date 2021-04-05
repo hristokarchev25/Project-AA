@@ -23,7 +23,7 @@ class MusicMain extends Component {
             })
             .catch(err => console.log(err));
 
-            db.collection('albums')
+        db.collection('albums')
             .get()
             .then(snapshot => {
                 const albums = [];
@@ -42,16 +42,16 @@ class MusicMain extends Component {
                 <h1><img className={style.logo} src="/Music.png" alt="Music logo" /></h1>
 
                 {   this.state.songs &&
-                    this.state.songs.map(song => {
+                    this.state.songs.map((song, index) => {
                         return (
-                            <SongCard {...song} />
+                            <SongCard key={index} {...song} />
                         )
                     })
                 }
-                 {   this.state.albums &&
-                    this.state.albums.map(album => {
+                {   this.state.albums &&
+                    this.state.albums.map((album, index) => {
                         return (
-                            <AlbumCard {...album} />
+                            <AlbumCard key={index} {...album} />
                         )
                     })
                 }

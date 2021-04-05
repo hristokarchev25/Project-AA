@@ -1,5 +1,5 @@
 import style from './AlbumCard.module.css';
-
+import { Link } from 'react-router-dom';
 
 const AlbumCard = ({
     cover,
@@ -14,7 +14,7 @@ const AlbumCard = ({
             <img className={style.box} src={`${cover}`} />
             <p className={style.name}>{album}</p>
             <p><span>By:</span>{artist}</p>
-            <a className={style.btn} href="#">Details</a>
+            <Link className={style.btn} to="/music/:AlbumId">Details</Link>
         </div>
 
     );

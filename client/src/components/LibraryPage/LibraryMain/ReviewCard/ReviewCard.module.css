@@ -1,13 +1,13 @@
 .box {
     display: inline-block;
     border: 2px solid black;
-    background: lightsalmon;
+    background: burlywood;
     width: 23%;
     vertical-align: top;
 }
 .box:hover p.name {
     background: black;
-    color: lightsalmon;
+    color: burlywood;
 }
 
 .name {
@@ -46,8 +46,9 @@ img.box {
     margin: 12px;
     border-radius: 4px;
     background: black;
-    color: lightsalmon;
+    color: burlywood;
 }
+
 
 .box p {
     display: block;
