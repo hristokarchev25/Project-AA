@@ -3,6 +3,7 @@ import { Component } from 'react';
 import style from './MusicMain.module.css';
 import { db } from '../../../utils/firebase';
 import SongCard from './SongCard/SongCard';
+import AlbumCard from './AlbumCard/AlbumCard';
 
 class MusicMain extends Component {
     state = {
@@ -21,6 +22,18 @@ class MusicMain extends Component {
                 this.setState({ songs: songs });
             })
             .catch(err => console.log(err));
+
+            db.collection('albums')
+            .get()
+            .then(snapshot => {
+                const albums = [];
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    albums.push(data);
+                })
+                this.setState({ albums: albums });
+            })
+            .catch(err => console.log(err));
     }
 
     render() {
@@ -32,6 +45,13 @@ class MusicMain extends Component {
                     this.state.songs.map(song => {
                         return (
                             <SongCard {...song} />
+                        )
+                    })
+                }
+                 {   this.state.albums &&
+                    this.state.albums.map(album => {
+                        return (
+                            <AlbumCard {...album} />
                         )
                     })
                 }
