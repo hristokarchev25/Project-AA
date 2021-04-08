@@ -17,7 +17,7 @@ class MusicMain extends Component {
                 const songs = [];
                 snapshot.forEach(doc => {
                     const data = doc.data();
-                    songs.push(data);
+                    songs.push({ ...data, id: doc.id });
                 })
                 this.setState({ songs: songs });
             })

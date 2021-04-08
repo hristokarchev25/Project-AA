@@ -1,12 +1,30 @@
 import style from './SongDetails.module.css';
 import { Link } from 'react-router-dom';
-const SongDetails = () => {
+
+import { db } from '../../utils/firebase';
+import { useEffect, useState } from 'react';
+
+const SongDetails = ({
+    match
+}) => {
+    let [song, setSong] = useState({});
+    let id = match.params.songId;
+    console.log(id);
+    useEffect(() => {
+        db.collection("songs")
+            .doc(id)
+            .get()
+            .then(res => setSong(res.data()))
+            .catch(err => console.log(err));
+    }, []);
+
     return (
         <main className={style.container}>
-            <h1>Song Name</h1>
-            <img className={style.box} src="http://www.imgworlds.com/wp-content/uploads/2015/12/18-CONTACTUS-HEADER.jpg" />
+            <h1>{song.song}</h1>
+            <img className={style.box} src={song.cover} />
             <div className={style.details}>
-                <p><span>Description:</span>asdsadsd</p>
+                <p><span>By:</span>{song.artist}</p>
+                <p><span>Lyrics:</span>{song.lyrics}</p>
                 <Link className={style.btn} to="/music">Back</Link>
             </div>
         </main>
