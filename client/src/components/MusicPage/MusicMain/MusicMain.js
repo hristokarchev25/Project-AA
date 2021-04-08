@@ -40,7 +40,8 @@ class MusicMain extends Component {
         return (
             <main className={style.container}>
                 <h1><img className={style.logo} src="/Music.png" alt="Music logo" /></h1>
-
+                <h2>Songs List</h2>
+                <hr/>
                 {   this.state.songs &&
                     this.state.songs.map((song, index) => {
                         return (
@@ -48,6 +49,8 @@ class MusicMain extends Component {
                         )
                     })
                 }
+                <h2>Albums List</h2>
+                <hr/>
                 {   this.state.albums &&
                     this.state.albums.map((album, index) => {
                         return (

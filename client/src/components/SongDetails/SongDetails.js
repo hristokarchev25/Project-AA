@@ -9,7 +9,7 @@ const SongDetails = ({
 }) => {
     let [song, setSong] = useState({});
     let id = match.params.songId;
-    console.log(id);
+   // console.log(id);
     useEffect(() => {
         db.collection("songs")
             .doc(id)

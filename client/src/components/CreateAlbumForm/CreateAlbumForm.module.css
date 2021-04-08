@@ -6,7 +6,7 @@
 }
 
 .form label {
-    background: green;
+    background: lightsalmon;
     color: black;
     border: 2px solid black;
     padding: 12px;
@@ -34,7 +34,7 @@
 
 
 .form input[type=submit] {
-    background-color: green;
+    background-color: lightsalmon;
     border: none;
     padding: 8px;
     text-align: center;
@@ -49,9 +49,11 @@
 }
 
 .form input[type=submit]:hover {
-    background-color: lightgreen;
+    /* background-color: darkgreen; */
+    background-color: #dcfadc;
     cursor: pointer;
-    color: white;
+    color: black;
+    border: black solid 2px;
 }
 
 .main {

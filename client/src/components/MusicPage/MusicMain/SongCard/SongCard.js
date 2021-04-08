@@ -14,7 +14,7 @@ const SongCard = ({
             <img className={style.box} src={`${cover}`} />
             <p className={style.name}>{song}</p>
             <p><span>By:</span>{artist}</p>
-            <Link className={style.btn} to={`/music/details/${id}`}>Details</Link>
+            <Link className={style.btn} to={`/music/details/song/${id}`}>Details</Link>
         </div>
 
     );

@@ -1,7 +1,9 @@
 .about {
     display: block;
     margin: auto;
-    background-color: #f3f3f2;
+    /* background-color: #f3f3f2; */
+    /* background-color: #D7FFB1; */
+    background-color: #dcfadc;
     padding: 3em;
 }
 

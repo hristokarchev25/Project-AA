@@ -14,7 +14,7 @@ const AlbumCard = ({
             <img className={style.box} src={`${cover}`} />
             <p className={style.name}>{album}</p>
             <p><span>By:</span>{artist}</p>
-            <Link className={style.btn} to="/music/:AlbumId">Details</Link>
+            <Link className={style.btn} to="/music/album/details/:AlbumId">Details</Link>
         </div>
 
     );
