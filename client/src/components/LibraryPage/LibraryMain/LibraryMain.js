@@ -17,7 +17,7 @@ class LibraryMain extends Component {
                 const reviews = [];
                 snapshot.forEach(doc => {
                     const data = doc.data();
-                    reviews.push(data);
+                    reviews.push({ ...data, id: doc.id });
                 })
                 this.setState({ reviews: reviews });
             })
