@@ -10,6 +10,7 @@ import About from './components/About/About';
 import MusicPage from './components/MusicPage/MusicPage';
 import CreateSongForm from './components/CreateSongForm/CreateSongForm';
 import SongDetails from './components/SongDetails/SongDetails';
+import AlbumDetails from './components/AlbumDetails/AlbumDetails';
 import CreateAlbumForm from './components/CreateAlbumForm/CreateAlbumForm';
 import LibraryPage from './components/LibraryPage/LibraryPage';
 import CreateBookReview from './components/CreateBookReview/CreateBookReview';
@@ -40,6 +41,7 @@ function App() {
           <Route path="/music/createSong" exact component={CreateSongForm} />
           <Route path="/music/createAlbum" exact component={CreateAlbumForm} />
           <Route path="/music/details/song/:songId" exact component={SongDetails} />
+          <Route path="/music/details/album/:albumId" exact component={AlbumDetails} />
           <Route path="/library" exact component={LibraryPage} />
           <Route path="/library/createBookReview" exact component={CreateBookReview} />
           <Route path="/registration" exact component={Registration} />

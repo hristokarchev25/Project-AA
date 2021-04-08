@@ -39,14 +39,14 @@ img.box {
     margin: 12px;
     border-radius: 4px;
     background: black;
-    color: #dcfadc;
+    color:lightsalmon;
 }
 
 .details {
     display: block;
     margin: auto;
     width: 50%;
-    background-color: #dcfadc;
+    background-color: lightsalmon;
     padding: 1em;
     border: solid black 2px;
 }
