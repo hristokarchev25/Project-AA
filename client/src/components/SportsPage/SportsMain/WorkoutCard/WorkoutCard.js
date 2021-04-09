@@ -13,8 +13,7 @@ const WorkoutCard = ({
 
         <div className={style.box}>
             <img className={style.box} src={`${presentImg}`} />
-           {/*  <p className={style.name}>{`${pastImg}`}</p> */}
-            <p><span>By:</span>{name}</p>
+            <p className={style.name}>Workout by: {name}</p> 
             <Link className={style.btn} to={`/sports/details/workout/${id}`}>Read more</Link>
         </div>
 

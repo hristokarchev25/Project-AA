@@ -14,7 +14,6 @@ const AlbumCard = ({
         <div className={style.box}>
             <img className={style.box} src={`${playerImg}`} />
             <p className={style.name}>{player}</p>
-            {/* <p><span>By:</span>{}</p> */}
             <img className={style.box} src={`${teamImg}`} />
             <p className={style.name}>To: {team}</p>
             <Link className={style.btn} to={`/sports/details/rumor/${id}`}>Read More</Link>
