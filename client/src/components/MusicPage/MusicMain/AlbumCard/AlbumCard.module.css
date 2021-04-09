@@ -7,7 +7,7 @@
 }
 .box:hover p.name {
     background: black;
-    color: lightgreen;
+    color: lightsalmon;
 }
 
 .name {
@@ -46,7 +46,7 @@ img.box {
     margin: 12px;
     border-radius: 4px;
     background: black;
-    color: lightgreen;
+    color: lightsalmon;
 }
 
 .box p {

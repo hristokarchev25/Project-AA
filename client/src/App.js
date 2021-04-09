@@ -18,7 +18,8 @@ import CreateBookReview from './components/CreateBookReview/CreateBookReview';
 import SportsPage from './components/SportsPage/SportsPage';
 import CreateRumorForm from './components/CreateRumorForm/CreateRumorForm';
 import CreateWorkout from './components/CreateWorkout/CreateWorkout';
-import WorkoutDetails from './components/WorkoutDetails/WorkoutDetails'
+import WorkoutDetails from './components/WorkoutDetails/WorkoutDetails';
+import RumorDetails from './components/RumorDetails/RumorDetails';
 import Registration from './components/Registration/Registration';
 import Login from './components/Login/Login';
 
@@ -55,6 +56,7 @@ function App() {
           <Route path="/sports/createRumor" exact component={CreateRumorForm} />
           <Route path="/sports/createWorkout" exact component={CreateWorkout} />
           <Route path="/sports/details/workout/:workoutId" exact component={WorkoutDetails} />
+          <Route path="/sports/details/rumor/:rumortId" exact component={RumorDetails} />
           <Route path="/registration" exact component={Registration} />
           <Route path="/login" exact component={Login} />
           <Route path="/logout" render={props => {
