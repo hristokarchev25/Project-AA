@@ -5,7 +5,8 @@ import { db } from '../../utils/firebase';
 import { useEffect, useState } from 'react';
 
 const RumorDetails = ({
-    match
+    match,
+    history
 }) => {
     let [rumor, setRumor] = useState({});
     let id = match.params.rumortId;
@@ -16,6 +17,16 @@ const RumorDetails = ({
             .then(res => setRumor(res.data()))
             .catch(err => console.log(err));
     }, []);
+
+    const onDelete = () => {
+        db.collection("rumors")
+        .doc(id)
+        .delete()
+        .then(()=> {
+            history.push('/sports')
+        })
+        .catch(err=>console.log(err));
+    }
 
     return (
         <main className={style.container}>
@@ -29,6 +40,7 @@ const RumorDetails = ({
                 {/* <p><span>By:</span>{song.artist}</p> */}
                 <p><span>Sources:</span>{rumor.source}</p>
                 <Link className={style.btn} to="/sports">Back</Link>
+                <Link className={style.btn} onClick={onDelete} to="/delete">Delete</Link>
             </div>
         </main>
     );

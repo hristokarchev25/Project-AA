@@ -5,7 +5,8 @@ import { db } from '../../utils/firebase';
 import { useEffect, useState } from 'react';
 
 const SongDetails = ({
-    match
+    match,
+    history
 }) => {
     let [song, setSong] = useState({});
     let id = match.params.songId;
@@ -18,6 +19,16 @@ const SongDetails = ({
             .catch(err => console.log(err));
     }, []);
 
+    const onDelete = () => {
+        db.collection("songs")
+        .doc(id)
+        .delete()
+        .then(()=> {
+            history.push('/music')
+        })
+        .catch(err=>console.log(err));
+    }
+
     return (
         <main className={style.container}>
             <h1>{song.song}</h1>
@@ -26,6 +37,7 @@ const SongDetails = ({
                 <p><span>By:</span>{song.artist}</p>
                 <p><span>Lyrics:</span>{song.lyrics}</p>
                 <Link className={style.btn} to="/music">Back</Link>
+                <Link className={style.btn} onClick={onDelete} to="/delete">Delete</Link>
             </div>
         </main>
     );

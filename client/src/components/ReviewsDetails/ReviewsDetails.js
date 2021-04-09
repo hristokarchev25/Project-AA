@@ -6,7 +6,8 @@ import { useEffect, useState } from 'react';
 
 
 const AlbumDetails = ({
-    match
+    match,
+    history
 }) => {
     let [review, setReview] = useState({});
     let id = match.params.reviewsId;
@@ -17,6 +18,17 @@ const AlbumDetails = ({
             .then(res => setReview(res.data()))
             .catch(err => console.log(err));
     }, []);
+
+    const onDelete = () => {
+        db.collection("reviews")
+        .doc(id)
+        .delete()
+        .then(()=> {
+            history.push('/library')
+        })
+        .catch(err=>console.log(err));
+    }
+
     return (
         <main className={style.container}>
             <h1>{review.book}</h1>
@@ -25,6 +37,7 @@ const AlbumDetails = ({
                 <p><span>By:</span>{review.writer}</p>
                 <p><span>Book Review:</span>{review.review}</p>
                 <Link className={style.btn} to="/library">Back</Link>
+                <Link className={style.btn} onClick={onDelete} to="/delete">Delete</Link>
             </div>
         </main>
     );
