@@ -1,41 +1,41 @@
 import { Component } from 'react';
 
 import style from './SportsMain.module.css';
-/* import { db } from '../../../utils/firebase';
-import SongCard from './SongCard/SongCard';
-import AlbumCard from './AlbumCard/AlbumCard'; */
+import { db } from '../../../utils/firebase';
+import WorkoutCard from './WorkoutCard/WorkoutCard';
+import RumorCard from './RumorCard/RumorCard';
 
 
 class SportsMain extends Component {
-   /*  state = {
-        songs: null
+    state = {
+        workouts: null
     }
 
     componentDidMount() {
-        db.collection('songs')
+        db.collection('workouts')
             .get()
             .then(snapshot => {
-                const songs = [];
+                const workouts = [];
                 snapshot.forEach(doc => {
                     const data = doc.data();
-                    songs.push({ ...data, id: doc.id });
+                    workouts.push({ ...data, id: doc.id });
                 })
-                this.setState({ songs: songs });
+                this.setState({ workouts: workouts });
             })
             .catch(err => console.log(err));
 
-        db.collection('albums')
+         db.collection('rumors')
             .get()
             .then(snapshot => {
-                const albums = [];
+                const rumors = [];
                 snapshot.forEach(doc => {
                     const data = doc.data();
-                    albums.push({ ...data, id: doc.id });
+                    rumors.push({ ...data, id: doc.id });
                 })
-                this.setState({ albums: albums });
+                this.setState({ rumors: rumors });
             })
-            .catch(err => console.log(err));
-    } */
+            .catch(err => console.log(err)); 
+    } 
 
     render() {
         return (
@@ -43,22 +43,22 @@ class SportsMain extends Component {
                 <h1><img className={style.logo} src="/Sports.png" alt="Sports logo" /></h1>
                 <h2>Workouts from around the Globe</h2>
                 <hr />
-               {/*  {   this.state.songs &&
-                    this.state.songs.map((song, index) => {
+                {   this.state.workouts &&
+                    this.state.workouts.map((workout, index) => {
                         return (
-                            <SongCard key={index} {...song} />
+                            <WorkoutCard key={index} {...workout} />
                         )
                     })
-                } */}
+                }
                 <h2>Rumors</h2>
                 <hr />
-             {/*    {   this.state.albums &&
-                    this.state.albums.map((album, index) => {
+                {   this.state.rumors &&
+                    this.state.rumors.map((rumor, index) => {
                         return (
-                            <AlbumCard key={index} {...album} />
+                            <RumorCard key={index} {...rumor} />
                         )
                     })
-                } */}
+                }
             </main>
         );
     }

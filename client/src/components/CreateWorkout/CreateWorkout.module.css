@@ -6,7 +6,7 @@
 }
 
 .form label {
-    background: orange;
+    background: peachpuff;
     color: black;
     border: 2px solid black;
     padding: 12px;
@@ -34,7 +34,7 @@
 
 
 .form input[type=submit] {
-    background-color: orange;
+    background-color: peachpuff;
     border: none;
     padding: 8px;
     text-align: center;
