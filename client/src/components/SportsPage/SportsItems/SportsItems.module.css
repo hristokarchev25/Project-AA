@@ -29,3 +29,10 @@
     border-right: 4px solid lightgreen;
     /* color: #ffa000; */
 }
+
+.logo {
+    
+    height: 300px;
+    padding: 1em;
+    float: left;
+}

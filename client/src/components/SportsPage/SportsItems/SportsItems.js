@@ -10,6 +10,9 @@ const SportsItems = () => {
             <li className={style.menuItem}>
                 <Link to="/sports/createRumor">Create Rumor</Link>
             </li>
+            
+            <h1><img  className={style.logo} src="/kb.png" alt="Kobe logo" /></h1>
+            {/* <h1><img  className={style.logo} src="/t.png" alt="Kobe logo" /></h1> */}
         </>
     );
 };
