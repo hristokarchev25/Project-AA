@@ -42,7 +42,7 @@ const CreateBookReview = ({
                     <label htmlFor="review">Review</label>
                     <textarea id="review" name="review" placeholder="Did you liked it or hated it?"></textarea>
 
-                    <label htmlFor="CoverUrl">CoverUrl</label>
+                    <label htmlFor="CoverUrl">Book Cover</label>
                     <input type="text" id="coverUrl" name="coverUrl" />
 
                     <input type="submit" value="Create" />

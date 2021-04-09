@@ -43,7 +43,7 @@ const CreateAlbumForm = ({
                     <label htmlFor="songs">Name of songs</label>
                     <textarea id="songs" name="songs"></textarea>
 
-                    <label htmlFor="CoverUrl">CoverUrl</label>
+                    <label htmlFor="CoverUrl">Cover of album</label>
                     <input type="text" id="coverUrl" name="coverUrl" />
 
                     <input type="submit" value="Create" />

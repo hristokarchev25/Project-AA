@@ -44,10 +44,10 @@ const CreateRumorForm = ({
                     <label htmlFor="source">Source</label>
                     <textarea id="source" name="source"></textarea>
 
-                    <label htmlFor="playerImg">PlayerImg</label>
+                    <label htmlFor="playerImg">Player Image</label>
                     <input type="text" id="playerImg" name="playerImg" />
 
-                    <label htmlFor="teamImg">TeamImg</label>
+                    <label htmlFor="teamImg">Team Image</label>
                     <input type="text" id="teamImg" name="teamImg" />
 
                     <input type="submit" value="Create" />

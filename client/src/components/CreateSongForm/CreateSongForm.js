@@ -42,7 +42,7 @@ const CreateSongForm = ({
                     <label htmlFor="lyrics">Lyrics</label>
                     <textarea id="name" name="lyrics" placeholder="I believe I can fly..."></textarea>
 
-                    <label htmlFor="CoverUrl">CoverUrl</label>
+                    <label htmlFor="CoverUrl">Song Cover</label>
                     <input type="text" id="coverUrl" name="coverUrl" />
 
                     <input type="submit" value="Create" />
