@@ -1,6 +1,6 @@
 import style from './SportsPage.module.css';
 import SportsItems from './SportsItems/SportsItems';
-/* import LibraryMain from './LibraryMain/LibraryMain'; */
+import SportsMain from './SportsMain/SportsMain';
 const SportsPage = () => {
     return (
         <>
@@ -9,7 +9,7 @@ const SportsPage = () => {
             <aside className={style.menu}>
                 <SportsItems />
             </aside>
-               {/*  <LibraryMain/> */}
+            <SportsMain />
         </>
     );
 };

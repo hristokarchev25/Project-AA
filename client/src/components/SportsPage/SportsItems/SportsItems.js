@@ -5,7 +5,7 @@ const SportsItems = () => {
     return (
         <>
             <li className={style.menuItem}>
-                <Link to="/sports/createSong">Create Workout</Link>
+                <Link to="/sports/createWorkout">Create Workout</Link>
             </li>
             <li className={style.menuItem}>
                 <Link to="/sports/createRumor">Create Rumor</Link>
