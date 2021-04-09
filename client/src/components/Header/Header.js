@@ -17,7 +17,7 @@ const Header = ({
                             <li className={style.listItem}><Link className={style.navListItem} to="/music">Alpha Music</Link></li>
                             <li className={style.listItem}><Link className={style.navListItem} to="/sports">Alpha Sports</Link></li>
                             <li className={style.listItem}><Link className={style.navListItem} to="/library">Alpha Library</Link></li>
-                            < li className={style.nameItem}>Welcome, {email}!</li>
+                            <li className={style.nameItem}>Welcome, {email}!</li>
                             <li className={style.listItem}><Link className={style.navListItem} to="/logout">Logout</Link></li>
                         </>
                     )
