@@ -1,15 +1,15 @@
 import style from './SportsPage.module.css';
-/* import LibraryItem from './LibraryItem/LibraryItem';
-import LibraryMain from './LibraryMain/LibraryMain'; */
+import SportsItems from './SportsItems/SportsItems';
+/* import LibraryMain from './LibraryMain/LibraryMain'; */
 const SportsPage = () => {
     return (
         <>
             <h1 className={style.headerOne}>Welcome to</h1>
 
-            {/* <aside className={style.menu}>
-                <LibraryItem />
+            <aside className={style.menu}>
+                <SportsItems />
             </aside>
-                <LibraryMain/> */}
+               {/*  <LibraryMain/> */}
         </>
     );
 };

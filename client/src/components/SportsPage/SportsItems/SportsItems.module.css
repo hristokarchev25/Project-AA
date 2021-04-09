@@ -1,0 +1,31 @@
+.menuItem {
+    display: block;
+    width: 98%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 11%;
+    height: 5vh;
+    text-align: center;
+}
+
+.menuItem a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 5%;
+    height: 60%;
+    display: block;
+}
+
+ .menuItem:hover {
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+    border-top: 4px solid lightgreen;
+    border-bottom: 4px solid lightgreen;
+    border-left: 4px solid lightgreen;
+    border-right: 4px solid lightgreen;
+    /* color: #ffa000; */
+}
