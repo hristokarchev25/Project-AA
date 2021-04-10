@@ -49,15 +49,15 @@ const CreateSongForm = ({
         }
 
         if (!artist.trim()) {
-            errors.recPass = "Name of artist is required";
+            errors.recart = "Name of artist is required";
             isValid = false;
         }
         if (!lyrics.trim()) {
-            errors.recPass = "Lyrics of song are required";
+            errors.recLyr= "Lyrics of song are required";
             isValid = false;
         }
         if (!coverUrl.trim()) {
-            errors.recPass = "Cover of song is required";
+            errors.recImg = "Cover of song is required";
             isValid = false;
         }
 
