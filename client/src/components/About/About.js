@@ -4,16 +4,6 @@ import style from './About.module.css';
 const About = () => {
     return (
         <>
-            {/* <main className={style.main}>
-                <h1 className={style.aboutH1}>Get to know us</h1>
-                <div className={style.about}>
-                    <p className={style.pCenter}><img src="/App.png" alt="app png" /></p>
-                    <p>
-                        <i>The Alpha App</i> is an amazing place, where you can do a lot of stuff. It is a love letter for people who love <strong>music</strong>, <strong>sports</strong> and <strong>books</strong>.
-                    It is created by <strong>Hristo Karchev</strong> , a student from <strong>SoftUni</strong>. Below you can read more about the features of the app. We are happy to have you, enjoy!
-                </p>
-                </div>
-            </main> */}
 
             <main className={style.main}>
                 <h1 className={style.aboutH1}>About Alpha Music </h1>
@@ -31,7 +21,7 @@ const About = () => {
                 <div className={style.about}>
                     <p className={style.pRight}><img src="/Sports.png" alt="music png" /></p>
                     <p>
-                        <i>Alpha Sports</i> is the part of the app for y'all sports and workout people! You can share with the world <strong>your workouts and meals</strong>.Our moto is to <strong>stay healthy together.</strong>
+                        <i>Alpha Sports</i> is the part of the app for y'all sports and workout people! You can share with the world <strong>your workouts and meals</strong>.Our moto is to <strong>stay healthy together.</strong>Also you have heard the latest rumors about LeBron and the Lakers? Share it with the world with the option of creating a sport rumor!
                     </p>
                 </div>
             </main>
@@ -41,7 +31,7 @@ const About = () => {
                 <div className={style.about}>
                     <p className={style.pLeft}><img src="/Books.png" alt="music png" /></p>
                     <p>
-                        <i>Alpha Library</i> is the gym for <strong>your brain</strong>! In this part of the app you can share what books you have read, books you have loved and those you have hated. Is is all <strong>about you and your books!</strong>
+                        <i>Alpha Library</i> is the gym for <strong>your brain</strong>! In this part of the app you can share what books you have read, books you have loved and those you have hated. Is is all <strong>about you and your books!</strong> With the option of creating a book review you have the full power of sharing what you love & hate!
                     </p>
                 </div>
             </main>

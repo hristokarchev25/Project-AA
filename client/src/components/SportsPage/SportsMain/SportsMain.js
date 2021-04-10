@@ -50,7 +50,7 @@ class SportsMain extends Component {
                         )
                     })
                 }
-                <h2>Rumors</h2>
+                <h2>Rumors from the sports world</h2>
                 <hr />
                 {   this.state.rumors &&
                     this.state.rumors.map((rumor, index) => {

@@ -19,7 +19,7 @@ img.box {
     text-align: left;
     height: 200px;
     width: auto;
-    border: black solid 2px;
+    /* border: black solid 2px; */
 }
 .left {
     text-align: left;

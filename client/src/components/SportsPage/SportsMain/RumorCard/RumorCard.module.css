@@ -25,7 +25,8 @@ img.box {
         margin: 0 auto;
         text-align: center;
         height: 200px;
-        width: auto
+        width: auto;
+        border: none;
 }
 
 
