@@ -64,3 +64,8 @@
     text-align: center;
     text-transform: uppercase
 }
+
+.error {
+    color: red;
+    text-align: center;
+}
