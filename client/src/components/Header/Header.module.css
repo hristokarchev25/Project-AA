@@ -11,7 +11,7 @@
 }
 .logo {
     
-    height: 80px;
+    height: 70px;
     padding: 1em;
     float: left;
 }
@@ -29,6 +29,10 @@
     padding: 0.5%;
     margin: 0.1%;
     vertical-align: top;
+    border-right: 1px solid #dcfadc;
+    border-left: 1px solid #dcfadc;
+    border-bottom: 1px solid #dcfadc;
+    border-top: 1px solid #dcfadc;
 }
     .listItem:not(:first-child) {
         padding: 2%;
