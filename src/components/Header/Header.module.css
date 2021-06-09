@@ -37,13 +37,13 @@
         padding: 2%;
         margin-top: 1.5%; 
     }
-.listItem:hover {
+/* .listItem:hover {
     border-right: 2px solid black;
     border-left: 2px solid black;
     border-bottom: 2px solid lightgreen;
     border-top: 2px solid lightgreen;
     font-weight: bold;
-}
+} */
 
 .nameItem {
     display: inline-block;
